@@ -1,0 +1,37 @@
+body{
+  background-image: url("https://cdna.artstation.com/p/assets/images/images/005/201/884/large/trippy-sun-pokedex-avec-pika.jpg?1489267325&dl=1");
+  margin-bottom: 25%;
+}
+
+.wrapper{
+  display: flex;
+  justify-content: center;
+  float: right;
+  margin-top: 450px;
+  margin-right: 180px;
+  padding: 10px;
+  width: 30%;
+  
+  
+}
+
+.mainTitle{
+  display: flex;
+  justify-content: center;
+  font-family:'Orbitron', sans-serif;
+  color: rgb(243, 243, 73);
+  font-size: 40px;
+}
+
+.searchBar{
+  font-family: 'Orbitron', sans-serif;
+  width: 250px;
+  height: 40px;
+}
+
+.searchBtn{
+  font-family:'Orbitron', sans-serif;
+  height: 40px;
+}
+
+
