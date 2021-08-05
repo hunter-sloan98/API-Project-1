@@ -12,18 +12,15 @@
 </head>
 <body>
   <div class='wrapper'>
-    <form>
-    <h1 class='mainTitle'>POKEDEX</h1>
-    <input class='searchBar' type="search" placeholder="Enter Value 0-1118" >
-      <button class='searchBtn'>Search</button>
-  </form>
+    <h1 class='mainTitle'>POKEDEX RANDOMIZER</h1>
+    <button id='searchBtn'onClick="window.location.reload();">Random Pokemon</button>
 </div>
 <div class='resultSection'>
-  <h3 class='resultHeader'>SEARCH RESULTS</h3>
+  <h3 class='resultHeader'>RESULTS</h3>
   <div class='innerResults'>
-    <p>
+    <ul id='myList'>
 
-    </p>
+    </ul>
   </div>
 </div>
 <script type='text/javascript' src="api-script.js"></script>

@@ -8,7 +8,7 @@ body{
 .wrapper{
   position: absolute;
   margin-top: 22%;
-  margin-left: 65%;
+  margin-left: 60%;
   resize: both;
 }
 
@@ -21,16 +21,11 @@ body{
   resize: both;
 }
 
-.searchBar{
-  font-family: 'Orbitron', sans-serif;
-  width: 250px;
-  height: 40px;
-  resize: both;
-}
 
-.searchBtn{
+#searchBtn{
   font-family:'Orbitron', sans-serif;
   height: 40px;
+  width: 500px;
   resize: both;
 }
 
@@ -47,8 +42,15 @@ body{
 
 .resultHeader{
   text-align: center;
+  font-size: xx-large;
   font-family: orbitron;
-  color:rgb(243, 243, 73;
+  color: rgb(243, 243, 73);
 }
+
+#myList{
+  font-family: orbitron;
+  font-size:xx-large;
+}
+
 
 

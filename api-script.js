@@ -1,34 +1,26 @@
 const baseUrl = 'https://pokeapi.co/api/v2/pokemon?offset=0&limit=1118'
+const pokemonList = document.getElementsByTagName('ul')
+// document.getElementById('searchBtn').addEventListener('click', displayPokemon)
 
-const searchForm = document.getElementsByTagName('form')[0];
-const pokemonList = document.querySelector('p')
+fetch(baseUrl)
+.then(result => {
+    return result.json();
+})
+.then(json => {
+    displayPokemon(json)
+})
 
-searchForm.addEventListener('submit', getPokemon)
-
-function getPokemon(e) {
-    e.preventDefault();
-        console.log('Clicked!')
-            fetch(baseUrl)
-                .then(result => {
-                    return result.json();
-                })
-                .then(json => {
-                    displayPokemon(json)
-                })
-}
 function displayPokemon(data){
-    console.log('Inside displayPokemon:', data);
-    function data.forEach(results => {
-        console.log(results.name);
-        let listItem = document.createElement('p');
-        listItem.innerText = pokemon.name;
-        pokemonList.appendChild(listItem);
-        
-    })
+    data.preventDefault
+        console.log('Clicked!')
+            console.log('Inside displayPokemon:', data);
+    Object.keys(data).forEach(anything =>{
+        let i = Math.floor(Math.random() * 1118);
+            let myArray = data.results[i].name
+                // console.log(myArray);
+                    var z = document.createElement('li'); 
+                    z.innerHTML = myArray;
+                    document.getElementById('myList').appendChild(z);
+})
 }
-
-
-
-
-
-
+//It may not be right but it works, also I cant figure out how to keep my elements in place with my background so they scale with the viewport and mess up but oh well, it works!!!!!!!
